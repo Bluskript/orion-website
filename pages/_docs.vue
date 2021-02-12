@@ -23,8 +23,8 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  async asyncData({ $content }) {
-    const page = await $content('hello').fetch()
+  async asyncData(ctx) {
+    const page = await ctx.$content(ctx.params.docs).fetch()
 
     return {
       page,
