@@ -8,7 +8,7 @@
         </p>
         <h-button
           class="mt-6 view-docs-btn"
-          @click.native="$router.push('/docs')"
+          @click.native="$router.push('/docs/welcome')"
         >
           View Docs
           <h-icon icon="mdiChevronRight" class="icon" />
